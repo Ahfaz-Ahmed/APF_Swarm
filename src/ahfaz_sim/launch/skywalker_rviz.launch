@@ -1,0 +1,11 @@
+   <launch>
+            <param name="robot_description" command="cat $(find ahfaz_sim)/models/Kiet_skywalker/urdf/skywalker.urdf" />
+            <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+            <node name="state_publisher" pkg="ahfaz_sim" type="state_publisher" />
+
+            <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+<param name="use_gui" value="true"/>
+
+<node name="rviz" pkg="rviz" type="rviz" />
+
+    </launch>

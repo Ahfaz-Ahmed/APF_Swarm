@@ -1,0 +1,21 @@
+<launch>
+  <arg name="model" default="$(find ahfaz_sim)/models/Kiet_skywalker/urdf/skywalker.urdf"/>
+  <arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz" />
+
+  <include file="$(find ahfaz_sim)/launch/skywalker_gazebo.launch">
+    <arg name="model" value="$(arg model)" />
+  </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+  <rosparam command="load"
+            file="$(find ahfaz_sim)/scripts/x8_control.yaml"
+             ns="ahfaz_sim"/>
+ 
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/ahfaz_sim" args="joint1_position_controller joint_state_controller"/>
+
+
+</launch>
