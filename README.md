@@ -18,15 +18,26 @@ ubuntu-pc:~/Drone_Kit$ python Drone_swarm3D.py
 To launch swarm for n=10
 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0
+
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-green -L PAF_Kiet  --console  -I1
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-blue -L PAF_Kiet  --console  -I2
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red2 -L PAF_Kiet  --console  -I3
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-green2 -L PAF_Kiet  --console  -I4
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-blue2 -L PAF_Kiet  --console  -I5
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red3 -L PAF_Kiet  --console  -I6
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-green3 -L PAF_Kiet  --console  -I7
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-blue3 -L PAF_Kiet  --console  -I8
+ 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red4 -L PAF_Kiet  --console  -I9
+ 
  ubuntu-pc:~$ roslaunch ahfaz_sim skywalkerx8_swarm10_obstacles.launch
+ 
  ubuntu-pc:~/Drone_Kit$ python Drone_swarm_10.py
 
