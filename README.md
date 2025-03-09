@@ -1,9 +1,12 @@
 # APF_Swarm
 
 
-Note# copy all Ardupilot parameter files to default param folder in ArduPilot directory.
+Note# Copy all Ardupilot parameter files to default param folder in ArduPilot directory. Use src folder to creat catkin workspace as follow
+  1.Create the root workspace directory (let say catkin_ws ) cd ~/ mkdir --parents catkin_ws/src cd catkin_ws.
+  2.Initialize the catkin workspace. ...
+  3.Build the workspace. ...
 
-To launch swarm for n=3
+Then to launch swarm for n=3 use seperate tabs to execute following commands.
 
 ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0 --out=tcpin:0.0.0.0:8100 --out=127.0.0.1:14552 --out=127.0.0.1:14553
 
@@ -15,7 +18,7 @@ ubuntu-pc:~$ roslaunch ahfaz_sim skywalkerx8_swarm.launch
 
 ubuntu-pc:~/Drone_Kit$ python Drone_swarm3D.py
 
-To launch swarm for n=10
+To launch swarm for n=10 execute following commands in seperate tabs.
 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0
 
