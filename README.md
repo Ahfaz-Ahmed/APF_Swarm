@@ -1,7 +1,28 @@
 # APF_Swarm
 
 
-Note# Copy all Ardupilot parameter files to default param folder in ArduPilot directory. Use src folder to creat catkin workspace as follow
+Note# Copy all Ardupilot parameter files to default param folder in ArduPilot directory.
+
+add all custom vehicle names to be used to ardupilot/Tools/autotest/pysim/vehicleinfo.py as shown bellow.
+
+	    "gazebo-skywalkerx8-red": {							
+                "waf_target": "bin/arduplane",
+                "default_params_filename":  "default_params/gazebo-skywalkerx8-red.parm",  
+		"external": True,
+            },
+	    "gazebo-skywalkerx8-green": {								
+                "waf_target": "bin/arduplane",
+                "default_params_filename":  "default_params/gazebo-skywalkerx8-green.parm", 
+		"external": True,
+            },
+	    "gazebo-skywalkerx8-blue": {			#this is gazebo skywalker3 added....					
+                "waf_target": "bin/arduplane",
+                "default_params_filename":  "default_params/gazebo-skywalkerx8-blue.parm", 
+		"external": True,
+            },
+
+Use src folder to creat catkin workspace as follow
+
   1.Create the root workspace directory (let say catkin_ws ) cd ~/ mkdir --parents catkin_ws/src cd catkin_ws.
   2.Initialize the catkin workspace. ...
   3.Build the workspace. ...
