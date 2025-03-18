@@ -24,7 +24,9 @@ add all custom vehicle names to be used to ardupilot/Tools/autotest/pysim/vehicl
 # Use src folder to creat catkin workspace as follow
 
   1.Create the root workspace directory (let say catkin_ws ) cd ~/ mkdir --parents catkin_ws/src cd catkin_ws.
+  
   2.Initialize the catkin workspace. ...
+  
   3.Build the workspace. ...
 
 # Then to launch swarm for n=3 use seperate tabs to execute following commands.
