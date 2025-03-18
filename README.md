@@ -29,7 +29,9 @@ add all custom vehicle names to be used to ardupilot/Tools/autotest/pysim/vehicl
   
   3.Build the workspace. ...
 
-# Then to launch swarm for n=3 use seperate tabs to execute following commands.
+# To launch swarm for n=3
+
+Use seperate tabs to execute following commands.
 
 ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0 --out=tcpin:0.0.0.0:8100 --out=127.0.0.1:14552 --out=127.0.0.1:14553
 
@@ -44,7 +46,9 @@ execute it at the same location with Python code
 ubuntu-pc:~/Drone_Kit$ python Drone_swarm3D.py
 
 
-# To launch swarm for n=10 execute following commands in seperate tabs.
+# To launch swarm for n=10 
+
+execute following commands in seperate tabs.
 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0
 
@@ -67,6 +71,8 @@ ubuntu-pc:~/Drone_Kit$ python Drone_swarm3D.py
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red4 -L PAF_Kiet  --console  -I9
  
  ubuntu-pc:~$ roslaunch ahfaz_sim skywalkerx8_swarm10_obstacles.launch
+
+ execute it at the same location with Python code
  
  ubuntu-pc:~/Drone_Kit$ python Drone_swarm_10.py
 
