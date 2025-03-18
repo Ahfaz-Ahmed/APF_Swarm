@@ -1,7 +1,7 @@
 # APF_Swarm
 
 
-Note# Copy all Ardupilot parameter files to default param folder in ArduPilot directory.
+# Note: Copy all Ardupilot parameter files to default param folder in ArduPilot directory and add the custom vehicle.
 
 add all custom vehicle names to be used to ardupilot/Tools/autotest/pysim/vehicleinfo.py as shown bellow.
 
@@ -21,15 +21,13 @@ add all custom vehicle names to be used to ardupilot/Tools/autotest/pysim/vehicl
 		"external": True,
             },
 
-Use src folder to creat catkin workspace as follow
+# Use src folder to creat catkin workspace as follow
 
   1.Create the root workspace directory (let say catkin_ws ) cd ~/ mkdir --parents catkin_ws/src cd catkin_ws.
   2.Initialize the catkin workspace. ...
   3.Build the workspace. ...
 
-Then to launch swarm for n=3 use seperate tabs to execute following commands.
-
-# Paste the following comands
+# Then to launch swarm for n=3 use seperate tabs to execute following commands.
 
 ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0 --out=tcpin:0.0.0.0:8100 --out=127.0.0.1:14552 --out=127.0.0.1:14553
 
@@ -39,12 +37,12 @@ ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-blue -L PAF_Kiet 
 
 ubuntu-pc:~$ roslaunch ahfaz_sim skywalkerx8_swarm.launch
 
-# execute it at the same location with Python code
+execute it at the same location with Python code
 
 ubuntu-pc:~/Drone_Kit$ python Drone_swarm3D.py
 
 
-To launch swarm for n=10 execute following commands in seperate tabs.
+# To launch swarm for n=10 execute following commands in seperate tabs.
 
  ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0
 
