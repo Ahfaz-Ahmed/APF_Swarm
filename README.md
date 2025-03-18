@@ -29,6 +29,18 @@ Use src folder to creat catkin workspace as follow
 
 Then to launch swarm for n=3 use seperate tabs to execute following commands.
 
+sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0 --out=tcpin:0.0.0.0:8100 --out=127.0.0.1:14552 --out=127.0.0.1:14553
+
+sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-green -L PAF_Kiet  --console  -I1 --out=tcpin:0.0.0.0:8200 --out=127.0.0.1:14562 --out=127.0.0.1:14563
+
+sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-blue -L PAF_Kiet  --console  -I2 –out=tcpin:0.0.0.0:8300 --out=127.0.0.1:14572 --out=127.0.0.1:14573
+
+roslaunch ahfaz_sim skywalkerx8_swarm.launch
+
+python Drone_swarm3D.py
+
+
+
 ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-red -L PAF_Kiet  --console  -I0 --out=tcpin:0.0.0.0:8100 --out=127.0.0.1:14552 --out=127.0.0.1:14553
 
 ubuntu-pc:~$ sim_vehicle.py -v ArduPlane -f gazebo-skywalkerx8-green -L PAF_Kiet  --console  -I1 --out=tcpin:0.0.0.0:8200 --out=127.0.0.1:14562 --out=127.0.0.1:14563
